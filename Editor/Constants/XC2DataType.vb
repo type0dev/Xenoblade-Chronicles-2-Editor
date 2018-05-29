@@ -11,15 +11,20 @@ Public Enum XC2DataType
     LegendaryItemAmount
     Trust
     Magic
-    Rex_Exp
+    Rex_BattleExp
+    Rex_Bravery ''
+    Rex_Truth ''
+    Rex_Comp ''
+    Rex_Justice ''
     Rex_HPMax
     Rex_Strength
     Rex_Ether
     Rex_Dex
     Rex_Agility
-    Rex_BattleExp
-    Rex_Total_Skill_Points
+    Rex_Luck ''
+    Rex_Exp
     Rex_Skill_Points
+    Rex_Total_Skill_Points
     Nia_Bravery
     Nia_Truth
     Nia_Comp
@@ -46,5 +51,18 @@ Public Enum XC2DataType
     Tora_Exp
     Tora_Skill_Points
     Tora_Total_Skill_Points
+    Zeke_Bravery
+    Zeke_Truth
+    Zeke_Comp
+    Zeke_Justice
+    Zeke_HPMax
+    Zeke_Stregth
+    Zeke_Ether
+    Zeke_Dexterity
+    Zeke_Agility
+    Zeke_Luck
+    Zeke_Exp
+    Zeke_Skill_Points
+    Zeke_Total_Skill_Points
 End Enum
 

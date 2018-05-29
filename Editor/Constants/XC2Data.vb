@@ -18,11 +18,16 @@ Public Class XC2Data
     }
 
     Public Shared DriverInfoOffsets As New Dictionary(Of XC2DataType, HexDataInfo) From {
+       {XC2DataType.Rex_Bravery, New HexDataInfo With {.Offset = &H40, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Rex_Truth, New HexDataInfo With {.Offset = &H48, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Rex_Comp, New HexDataInfo With {.Offset = &H50, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Rex_Justice, New HexDataInfo With {.Offset = &H58, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Rex_Exp, New HexDataInfo With {.Offset = &HEC, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Rex_HPMax, New HexDataInfo With {.Offset = &HD2, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Rex_Strength, New HexDataInfo With {.Offset = &HD4, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Rex_Ether, New HexDataInfo With {.Offset = &HD6, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Rex_Dex, New HexDataInfo With {.Offset = &HD8, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Rex_Luck, New HexDataInfo With {.Offset = &HDC, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Rex_Agility, New HexDataInfo With {.Offset = &HDA, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Rex_Skill_Points, New HexDataInfo With {.Offset = &HF4, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Rex_Total_Skill_Points, New HexDataInfo With {.Offset = &HF8, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
@@ -51,7 +56,20 @@ Public Class XC2Data
        {XC2DataType.Tora_Luck, New HexDataInfo With {.Offset = &H11BC, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Tora_Exp, New HexDataInfo With {.Offset = &H11CC, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Tora_Skill_Points, New HexDataInfo With {.Offset = &H11D4, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
-       {XC2DataType.Tora_Total_Skill_Points, New HexDataInfo With {.Offset = &H11D8, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}}
+       {XC2DataType.Tora_Total_Skill_Points, New HexDataInfo With {.Offset = &H11D8, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Zeke_Bravery, New HexDataInfo With {.Offset = &HB80, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Zeke_Truth, New HexDataInfo With {.Offset = &HB88, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Zeke_Comp, New HexDataInfo With {.Offset = &HB90, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Zeke_Justice, New HexDataInfo With {.Offset = &HB98, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Zeke_HPMax, New HexDataInfo With {.Offset = &HC12, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Zeke_Stregth, New HexDataInfo With {.Offset = &HC14, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Zeke_Ether, New HexDataInfo With {.Offset = &HC16, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Zeke_Dexterity, New HexDataInfo With {.Offset = &HC18, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Zeke_Agility, New HexDataInfo With {.Offset = &HC1A, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Zeke_Luck, New HexDataInfo With {.Offset = &HC1C, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Zeke_Exp, New HexDataInfo With {.Offset = &HC2C, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Zeke_Skill_Points, New HexDataInfo With {.Offset = &HC34, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Zeke_Total_Skill_Points, New HexDataInfo With {.Offset = &HC38, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}}
        }
 
 
