@@ -77,5 +77,18 @@ Public Enum XC2DataType
     Morag_Exp
     Morag_Skill_Points
     Morag_Total_Skill_Points
+    Vandham_Bravery
+    Vandham_Truth
+    Vandham_Comp
+    Vandham_Justice
+    Vandham_HPMax
+    Vandham_Stregth
+    Vandham_Ether
+    Vandham_Dexterity
+    Vandham_Agility
+    Vandham_Luck
+    Vandham_Exp
+    Vandham_Skill_Points
+    Vandham_Total_Skill_Points
 End Enum
 

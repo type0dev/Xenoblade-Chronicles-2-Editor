@@ -82,8 +82,22 @@ Public Class XC2Data
        {XC2DataType.Morag_Luck, New HexDataInfo With {.Offset = &H1CFC, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Morag_Exp, New HexDataInfo With {.Offset = &H1D0C, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Morag_Skill_Points, New HexDataInfo With {.Offset = &H1D14, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
-       {XC2DataType.Morag_Total_Skill_Points, New HexDataInfo With {.Offset = &H1D18, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}}
+       {XC2DataType.Morag_Total_Skill_Points, New HexDataInfo With {.Offset = &H1D18, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Vandham_Bravery, New HexDataInfo With {.Offset = &H1C0, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Vandham_Truth, New HexDataInfo With {.Offset = &H16C8, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Vandham_Comp, New HexDataInfo With {.Offset = &H16D0, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Vandham_Justice, New HexDataInfo With {.Offset = &H16D8, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Vandham_HPMax, New HexDataInfo With {.Offset = &H1752, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Vandham_Stregth, New HexDataInfo With {.Offset = &H1754, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Vandham_Ether, New HexDataInfo With {.Offset = &HC1756, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Vandham_Dexterity, New HexDataInfo With {.Offset = &H1758, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Vandham_Agility, New HexDataInfo With {.Offset = &H175A, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Vandham_Luck, New HexDataInfo With {.Offset = &H175C, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Vandham_Exp, New HexDataInfo With {.Offset = &H176C, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Vandham_Skill_Points, New HexDataInfo With {.Offset = &H1774, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Vandham_Total_Skill_Points, New HexDataInfo With {.Offset = &H1778, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}}
        }
+
 
 
 End Class
