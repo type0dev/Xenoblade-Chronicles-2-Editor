@@ -69,7 +69,20 @@ Public Class XC2Data
        {XC2DataType.Zeke_Luck, New HexDataInfo With {.Offset = &HC1C, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Zeke_Exp, New HexDataInfo With {.Offset = &HC2C, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Zeke_Skill_Points, New HexDataInfo With {.Offset = &HC34, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
-       {XC2DataType.Zeke_Total_Skill_Points, New HexDataInfo With {.Offset = &HC38, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}}
+       {XC2DataType.Zeke_Total_Skill_Points, New HexDataInfo With {.Offset = &HC38, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Morag_Bravery, New HexDataInfo With {.Offset = &H1C60, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Morag_Truth, New HexDataInfo With {.Offset = &H1C68, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Morag_Comp, New HexDataInfo With {.Offset = &H1C70, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Morag_Justice, New HexDataInfo With {.Offset = &H1C78, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Morag_HPMax, New HexDataInfo With {.Offset = &H1CF2, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Morag_Stregth, New HexDataInfo With {.Offset = &H1CF4, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Morag_Ether, New HexDataInfo With {.Offset = &HC1CF6, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Morag_Dexterity, New HexDataInfo With {.Offset = &H1CF8, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Morag_Agility, New HexDataInfo With {.Offset = &H1CFA, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Morag_Luck, New HexDataInfo With {.Offset = &H1CFC, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Morag_Exp, New HexDataInfo With {.Offset = &H1D0C, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Morag_Skill_Points, New HexDataInfo With {.Offset = &H1D14, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Morag_Total_Skill_Points, New HexDataInfo With {.Offset = &H1D18, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}}
        }
 
 

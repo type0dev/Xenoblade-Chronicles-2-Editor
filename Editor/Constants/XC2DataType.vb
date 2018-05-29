@@ -64,5 +64,18 @@ Public Enum XC2DataType
     Zeke_Exp
     Zeke_Skill_Points
     Zeke_Total_Skill_Points
+    Morag_Bravery
+    Morag_Truth
+    Morag_Comp
+    Morag_Justice
+    Morag_HPMax
+    Morag_Stregth
+    Morag_Ether
+    Morag_Dexterity
+    Morag_Agility
+    Morag_Luck
+    Morag_Exp
+    Morag_Skill_Points
+    Morag_Total_Skill_Points
 End Enum
 
