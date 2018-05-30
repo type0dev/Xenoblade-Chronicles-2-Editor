@@ -9,19 +9,18 @@ Public Enum XC2DataType
     RareItemAmount
     LegendaryItemID
     LegendaryItemAmount
-    Trust
     Magic
     Rex_BattleExp
-    Rex_Bravery ''
-    Rex_Truth ''
-    Rex_Comp ''
-    Rex_Justice ''
+    Rex_Bravery
+    Rex_Truth
+    Rex_Comp
+    Rex_Justice
     Rex_HPMax
     Rex_Strength
     Rex_Ether
     Rex_Dex
     Rex_Agility
-    Rex_Luck ''
+    Rex_Luck
     Rex_Exp
     Rex_Skill_Points
     Rex_Total_Skill_Points
@@ -90,5 +89,60 @@ Public Enum XC2DataType
     Vandham_Exp
     Vandham_Skill_Points
     Vandham_Total_Skill_Points
+    Pyra_Trust
+    Rex_Art_Weapon_0
+    Rex_Art_Weapon_1
+    Rex_Art_Weapon_2
+    Rex_Art_Weapon_3
+    Rex_Art_Weapon_4
+    Rex_Art_Weapon_5
+    Rex_Art_Weapon_6
+    Rex_Art_Weapon_7
+    Rex_Art_Weapon_8
+    Rex_Art_Weapon_9
+    Rex_Art_Weapon_10
+    Rex_Art_Weapon_11
+    Rex_Art_Weapon_12
+    Rex_Art_Weapon_13
+    Rex_Art_Weapon_14
+    Rex_Art_Weapon_15
+    Rex_Art_Weapon_16
+    Rex_Art_Weapon_17
+    Rex_Art_Weapon_18
+    Rex_Art_Weapon_19
+    Rex_Art_Weapon_20
+    Rex_Art_Weapon_21
+    Rex_Art_Weapon_22
+    Rex_Art_Weapon_23
+    Rex_Art_Weapon_24
+    Rex_Art_Weapon_25
+    Rex_Art_Weapon_26
+    Nia_Art_Weapon_0
+    Nia_Art_Weapon_1
+    Nia_Art_Weapon_2
+    Nia_Art_Weapon_3
+    Nia_Art_Weapon_4
+    Nia_Art_Weapon_5
+    Nia_Art_Weapon_6
+    Nia_Art_Weapon_7
+    Nia_Art_Weapon_8
+    Nia_Art_Weapon_9
+    Nia_Art_Weapon_10
+    Nia_Art_Weapon_11
+    Nia_Art_Weapon_12
+    Nia_Art_Weapon_13
+    Nia_Art_Weapon_14
+    Nia_Art_Weapon_15
+    Nia_Art_Weapon_16
+    Nia_Art_Weapon_17
+    Nia_Art_Weapon_18
+    Nia_Art_Weapon_19
+    Nia_Art_Weapon_20
+    Nia_Art_Weapon_21
+    Nia_Art_Weapon_22
+    Nia_Art_Weapon_23
+    Nia_Art_Weapon_24
+    Nia_Art_Weapon_25
+    Nia_Art_Weapon_26
 End Enum
 

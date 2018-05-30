@@ -88,13 +88,16 @@ Public Class XC2MainForm
         PlayerInfoEditor.DataBindings.Add(New Binding(NameOf(PlayerInfoEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
 
         CoreEditor.Configure(XC2Data.CoreOffsets, "Cores", ReadFromFileBytes, SetFileBytes)
-        CoreEditor.DataBindings.Add(New Binding(NameOf(PlayerInfoEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
+        CoreEditor.DataBindings.Add(New Binding(NameOf(CoreEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
 
         BladeEditor.Configure(XC2Data.BladeInfoOffsets, "Blades", ReadFromFileBytes, SetFileBytes)
-        BladeEditor.DataBindings.Add(New Binding(NameOf(PlayerInfoEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
+        BladeEditor.DataBindings.Add(New Binding(NameOf(BladeEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
 
         DriverEditor.Configure(XC2Data.DriverInfoOffsets, "Drivers", ReadFromFileBytes, SetFileBytes)
-        DriverEditor.DataBindings.Add(New Binding(NameOf(PlayerInfoEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
+        DriverEditor.DataBindings.Add(New Binding(NameOf(DriverEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
+
+        ArtWeaponPointEditor.Configure(XC2Data.ArtWeaponPointOffsets, "Driver Art WP", ReadFromFileBytes, SetFileBytes)
+        ArtWeaponPointEditor.DataBindings.Add(New Binding(NameOf(ArtWeaponPointEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
 
     End Sub
 
@@ -113,11 +116,15 @@ Public Class XC2MainForm
 
     End Sub
 
-    Private Sub BladeEditor_Load(sender As Object, e As EventArgs) Handles BladeEditor.Load
+    Private Sub BladeEditor_Load(sender As Object, e As EventArgs) Handles BladeEditor.Load, ArtWeaponPointEditor.Load
 
     End Sub
 
     Private Sub XC2FieldTypeEditor1_Load(sender As Object, e As EventArgs) Handles DriverEditor.Load
+
+    End Sub
+
+    Private Sub Blades_Click(sender As Object, e As EventArgs) Handles Blades.Click
 
     End Sub
 End Class
