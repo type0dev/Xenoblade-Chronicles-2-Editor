@@ -84,6 +84,7 @@ Public Class XC2MainForm
     ''' Handles the initialization of the player info editor control.
     ''' </summary>
     Private Sub OnPlayerInfoEditorLoaded(sender As XC2FieldTypeEditor, e As EventArgs) Handles PlayerInfoEditor.Load
+
         PlayerInfoEditor.Configure(XC2Data.PlayerInfoOffsets, "General Player Info", ReadFromFileBytes, SetFileBytes)
         PlayerInfoEditor.DataBindings.Add(New Binding(NameOf(PlayerInfoEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
 
@@ -98,6 +99,9 @@ Public Class XC2MainForm
 
         ArtWeaponPointEditor.Configure(XC2Data.ArtWeaponPointOffsets, "Driver Art WP", ReadFromFileBytes, SetFileBytes)
         ArtWeaponPointEditor.DataBindings.Add(New Binding(NameOf(ArtWeaponPointEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
+
+        MiniGameEditor.Configure(XC2Data.MiniGameOffset, "Mini Game", ReadFromFileBytes, SetFileBytes)
+        MiniGameEditor.DataBindings.Add(New Binding(NameOf(MiniGameEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
 
     End Sub
 
@@ -124,7 +128,49 @@ Public Class XC2MainForm
 
     End Sub
 
-    Private Sub Blades_Click(sender As Object, e As EventArgs) Handles Blades.Click
+    Private Sub Blades_Click(sender As Object, e As EventArgs) Handles MiniGame.Click
+        If ArtWeaponPointEditor.Visible = True Then
+            ArtWeaponPointEditor.Visible = False
+        End If
+
+
+        If MiniGameEditor.Visible = True Then
+            MiniGameEditor.Visible = False
+        Else
+            MiniGameEditor.Visible = True
+
+        End If
+
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ArtsWP.Click
+
+        If MiniGameEditor.Visible = True Then
+            MiniGameEditor.Visible = False
+        End If
+
+        If ArtWeaponPointEditor.Visible = True Then
+            ArtWeaponPointEditor.Visible = False
+        Else
+            ArtWeaponPointEditor.Visible = True
+
+        End If
+
+    End Sub
+
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+
+        If ArtWeaponPointEditor.Visible = True Or MiniGameEditor.Visible = True Then
+            ArtWeaponPointEditor.Visible = False And MiniGameEditor.Visible = False
+        End If
+
+
+        If CoreEditor.Visible = True Then
+            CoreEditor.Visible = False
+        Else
+            CoreEditor.Visible = True
+
+        End If
 
     End Sub
 End Class

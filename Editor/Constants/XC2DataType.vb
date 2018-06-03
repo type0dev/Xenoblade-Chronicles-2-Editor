@@ -91,58 +91,385 @@ Public Enum XC2DataType
     Vandham_Total_Skill_Points
     Pyra_Trust
     Rex_Art_Weapon_0
+    Rex_Art_Weapon_0_Total
     Rex_Art_Weapon_1
+    Rex_Art_Weapon_1_Total
     Rex_Art_Weapon_2
+    Rex_Art_Weapon_2_Total
     Rex_Art_Weapon_3
+    Rex_Art_Weapon_3_Total
     Rex_Art_Weapon_4
+    Rex_Art_Weapon_4_Total
     Rex_Art_Weapon_5
+    Rex_Art_Weapon_5_Total
     Rex_Art_Weapon_6
+    Rex_Art_Weapon_6_Total
     Rex_Art_Weapon_7
+    Rex_Art_Weapon_7_Total
     Rex_Art_Weapon_8
+    Rex_Art_Weapon_8_Total
     Rex_Art_Weapon_9
+    Rex_Art_Weapon_9_Total
     Rex_Art_Weapon_10
+    Rex_Art_Weapon_10_Total
     Rex_Art_Weapon_11
+    Rex_Art_Weapon_11_Total
     Rex_Art_Weapon_12
+    Rex_Art_Weapon_12_Total
     Rex_Art_Weapon_13
+    Rex_Art_Weapon_13_Total
     Rex_Art_Weapon_14
+    Rex_Art_Weapon_14_Total
     Rex_Art_Weapon_15
+    Rex_Art_Weapon_15_Total
     Rex_Art_Weapon_16
+    Rex_Art_Weapon_16_Total
     Rex_Art_Weapon_17
+    Rex_Art_Weapon_17_Total
     Rex_Art_Weapon_18
+    Rex_Art_Weapon_18_Total
     Rex_Art_Weapon_19
+    Rex_Art_Weapon_19_Total
     Rex_Art_Weapon_20
+    Rex_Art_Weapon_20_Total
     Rex_Art_Weapon_21
+    Rex_Art_Weapon_21_Total
     Rex_Art_Weapon_22
+    Rex_Art_Weapon_22_Total
     Rex_Art_Weapon_23
+    Rex_Art_Weapon_23_Total
     Rex_Art_Weapon_24
+    Rex_Art_Weapon_24_Total
     Rex_Art_Weapon_25
+    Rex_Art_Weapon_25_Total
     Rex_Art_Weapon_26
+    Rex_Art_Weapon_26_Total
     Nia_Art_Weapon_0
+    Nia_Art_Weapon_0_Total
     Nia_Art_Weapon_1
+    Nia_Art_Weapon_1_Total
     Nia_Art_Weapon_2
+    Nia_Art_Weapon_2_Total
     Nia_Art_Weapon_3
+    Nia_Art_Weapon_3_Total
     Nia_Art_Weapon_4
+    Nia_Art_Weapon_4_Total
     Nia_Art_Weapon_5
+    Nia_Art_Weapon_5_Total
     Nia_Art_Weapon_6
+    Nia_Art_Weapon_6_Total
     Nia_Art_Weapon_7
+    Nia_Art_Weapon_7_Total
     Nia_Art_Weapon_8
+    Nia_Art_Weapon_8_Total
     Nia_Art_Weapon_9
+    Nia_Art_Weapon_9_Total
     Nia_Art_Weapon_10
+    Nia_Art_Weapon_10_Total
     Nia_Art_Weapon_11
+    Nia_Art_Weapon_11_Total
     Nia_Art_Weapon_12
+    Nia_Art_Weapon_12_Total
     Nia_Art_Weapon_13
+    Nia_Art_Weapon_13_Total
     Nia_Art_Weapon_14
+    Nia_Art_Weapon_14_Total
     Nia_Art_Weapon_15
+    Nia_Art_Weapon_15_Total
     Nia_Art_Weapon_16
+    Nia_Art_Weapon_16_Total
     Nia_Art_Weapon_17
+    Nia_Art_Weapon_17_Total
     Nia_Art_Weapon_18
+    Nia_Art_Weapon_18_Total
     Nia_Art_Weapon_19
+    Nia_Art_Weapon_19_Total
     Nia_Art_Weapon_20
+    Nia_Art_Weapon_20_Total
     Nia_Art_Weapon_21
+    Nia_Art_Weapon_21_Total
     Nia_Art_Weapon_22
+    Nia_Art_Weapon_22_Total
     Nia_Art_Weapon_23
+    Nia_Art_Weapon_23_Total
     Nia_Art_Weapon_24
+    Nia_Art_Weapon_24_Total
     Nia_Art_Weapon_25
+    Nia_Art_Weapon_25_Total
     Nia_Art_Weapon_26
+    Nia_Art_Weapon_26_Total
+    Ether_Crystals
+    MiniGame_0
+    MiniGame_1
+    MiniGame_2
+    MiniGame_3
+    MiniGame_4
+    MiniGame_5
+    MiniGame_6
+    MiniGame_7
+    MiniGame_8
+    MiniGame_9
+    MiniGame_10
+    MiniGame_11
+    MiniGame_12
+    MiniGame_13
+    MiniGame_14
+    MiniGame_15
+    MiniGame_16
+    MiniGame_17
+    MiniGame_18
+    MiniGame_19
+    MiniGame_20
+    MiniGame_21
+    MiniGame_22
+    MiniGame_23
+    MiniGame_24
+    MiniGame_25
+    MiniGame_26
+    MiniGame_27
+    MiniGame_28
+    MiniGame_29
+    MiniGame_30
+    MiniGame_31
+    MiniGame_32
+    MiniGame_33
+    MiniGame_34
+    MiniGame_35
+    MiniGame_36
+    MiniGame_37
+    MiniGame_38
+    MiniGame_39
+    MiniGame_40
+    MiniGame_41
+    MiniGame_42
+    MiniGame_43
+    MiniGame_44
+    MiniGame_45
+    MiniGame_46
+    MiniGame_47
+    MiniGame_48
+    MiniGame_49
+    MiniGame_50
+    MiniGame_51
+    MiniGame_52
+    MiniGame_53
+    MiniGame_54
+    MiniGame_55
+    MiniGame_56
+    MiniGame_57
+    MiniGame_58
+    MiniGame_59
+    MiniGame_60
+    MiniGame_61
+    MiniGame_62
+    MiniGame_63
+    MiniGame_64
+    MiniGame_65
+    MiniGame_66
+    MiniGame_67
+    MiniGame_68
+    MiniGame_69
+    MiniGame_70
+    MiniGame_71
+    MiniGame_72
+    MiniGame_73
+    MiniGame_74
+    MiniGame_75
+    MiniGame_76
+    MiniGame_77
+    MiniGame_78
+    MiniGame_79
+    MiniGame_80
+    MiniGame_81
+    MiniGame_82
+    MiniGame_83
+    MiniGame_84
+    MiniGame_85
+    MiniGame_86
+    MiniGame_87
+    MiniGame_88
+    MiniGame_89
+    MiniGame_90
+    MiniGame_91
+    MiniGame_92
+    MiniGame_93
+    MiniGame_94
+    MiniGame_95
+    MiniGame_96
+    MiniGame_97
+    MiniGame_98
+    MiniGame_99
+    MiniGame_100
+    MiniGame_101
+    MiniGame_102
+    MiniGame_103
+    MiniGame_104
+    MiniGame_105
+    MiniGame_106
+    MiniGame_107
+    MiniGame_108
+    MiniGame_109
+    MiniGame_110
+    MiniGame_111
+    MiniGame_112
+    MiniGame_113
+    MiniGame_114
+    MiniGame_115
+    MiniGame_116
+    MiniGame_117
+    MiniGame_118
+    MiniGame_119
+    MiniGame_120
+    MiniGame_121
+    MiniGame_122
+    MiniGame_123
+    MiniGame_124
+    MiniGame_125
+    MiniGame_126
+    MiniGame_127
+    MiniGame_128
+    MiniGame_129
+    MiniGame_130
+    MiniGame_131
+    MiniGame_132
+    MiniGame_133
+    MiniGame_134
+    MiniGame_135
+    MiniGame_136
+    MiniGame_137
+    MiniGame_138
+    MiniGame_139
+    MiniGame_140
+    MiniGame_141
+    MiniGame_142
+    MiniGame_143
+    MiniGame_144
+    MiniGame_145
+    MiniGame_146
+    MiniGame_147
+    MiniGame_148
+    MiniGame_149
+    MiniGame_150
+    MiniGame_151
+    MiniGame_152
+    MiniGame_153
+    MiniGame_154
+    MiniGame_155
+    MiniGame_156
+    MiniGame_157
+    MiniGame_158
+    MiniGame_159
+    MiniGame_160
+    MiniGame_161
+    MiniGame_162
+    MiniGame_163
+    MiniGame_164
+    MiniGame_165
+    MiniGame_166
+    MiniGame_167
+    MiniGame_168
+    MiniGame_169
+    MiniGame_170
+    MiniGame_171
+    MiniGame_172
+    MiniGame_173
+    MiniGame_174
+    MiniGame_175
+    MiniGame_176
+    MiniGame_177
+    MiniGame_178
+    MiniGame_179
+    MiniGame_180
+    MiniGame_181
+    MiniGame_182
+    MiniGame_183
+    MiniGame_184
+    MiniGame_185
+    MiniGame_186
+    MiniGame_187
+    MiniGame_188
+    MiniGame_189
+    MiniGame_190
+    MiniGame_191
+    MiniGame_192
+    MiniGame_193
+    MiniGame_194
+    MiniGame_195
+    MiniGame_196
+    MiniGame_197
+    MiniGame_198
+    MiniGame_199
+    MiniGame_200
+    MiniGame_201
+    MiniGame_202
+    MiniGame_203
+    MiniGame_204
+    MiniGame_205
+    MiniGame_206
+    MiniGame_207
+    MiniGame_208
+    MiniGame_209
+    MiniGame_210
+    MiniGame_211
+    MiniGame_212
+    MiniGame_213
+    MiniGame_214
+    MiniGame_215
+    MiniGame_216
+    MiniGame_217
+    MiniGame_218
+    MiniGame_219
+    MiniGame_220
+    MiniGame_221
+    MiniGame_222
+    MiniGame_223
+    MiniGame_224
+    MiniGame_225
+    MiniGame_226
+    MiniGame_227
+    MiniGame_228
+    MiniGame_229
+    MiniGame_230
+    MiniGame_231
+    MiniGame_232
+    MiniGame_233
+    MiniGame_234
+    MiniGame_235
+    MiniGame_236
+    MiniGame_237
+    MiniGame_238
+    MiniGame_239
+    MiniGame_240
+    MiniGame_241
+    MiniGame_242
+    MiniGame_243
+    MiniGame_244
+    MiniGame_245
+    MiniGame_246
+    MiniGame_247
+    MiniGame_248
+    MiniGame_249
+    MiniGame_250
+    MiniGame_251
+    MiniGame_252
+    MiniGame_253
+    MiniGame_254
+    MiniGame_255
+    Tora_Art_Weapon_0
+    Tora_Art_Weapon_0_Total
+    Tora_Art_Weapon_1
+    Tora_Art_Weapon_1_Total
+    Tora_Art_Weapon_2
+    Tora_Art_Weapon_2_Total
+    Tora_Art_Weapon_3
+    Tora_Art_Weapon_3_Total
+    Tora_Art_Weapon_4
+    Tora_Art_Weapon_4_Total
+    Tora_Art_Weapon_5
+    Tora_Art_Weapon_5_Total
+    Tora_Art_Weapon_6
+    Tora_Art_Weapon_6_Total
+    Tora_Art_Weapon_7
+    Tora_Art_Weapon_7_Total
 End Enum
 
