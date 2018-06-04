@@ -11,7 +11,7 @@ Public Class XC2Data
     Public Shared CoreOffsets As New Dictionary(Of XC2DataType, HexDataInfo) From {
         {XC2DataType.CommonItemAmount, New HexDataInfo With {.Offset = &HF627A, .Size = &H2, .ToSaveFileValue = FieldConversions.FromCoreDecimal, .ToHumanReadableValue = FieldConversions.ToCoreDecimal}},
         {XC2DataType.RareItemAmount, New HexDataInfo With {.Offset = &HF6286, .Size = &H2, .ToSaveFileValue = FieldConversions.FromCoreDecimal, .ToHumanReadableValue = FieldConversions.ToCoreDecimal}},
-        {XC2DataType.LegendaryItemAmount, New HexDataInfo With {.Offset = &H6292, .Size = &H2, .ToSaveFileValue = FieldConversions.FromCoreDecimal, .ToHumanReadableValue = FieldConversions.ToCoreDecimal}}
+        {XC2DataType.LegendaryItemAmount, New HexDataInfo With {.Offset = &HF6292, .Size = &H2, .ToSaveFileValue = FieldConversions.FromCoreDecimal, .ToHumanReadableValue = FieldConversions.ToCoreDecimal}}
     }
 
     Public Shared BladeInfoOffsets As New Dictionary(Of XC2DataType, HexDataInfo) From {
