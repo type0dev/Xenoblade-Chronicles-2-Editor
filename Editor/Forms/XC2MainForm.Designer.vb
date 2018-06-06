@@ -27,13 +27,15 @@ Partial Class XC2MainForm
         Me.OpenFileBtn = New System.Windows.Forms.Button()
         Me.MiniGame = New System.Windows.Forms.Button()
         Me.ArtsWP = New System.Windows.Forms.Button()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.MiniGameEditor = New XC2Editor.XC2FieldTypeEditor()
         Me.DriverEditor = New XC2Editor.XC2FieldTypeEditor()
         Me.ArtWeaponPointEditor = New XC2Editor.XC2FieldTypeEditor()
         Me.BladeEditor = New XC2Editor.XC2FieldTypeEditor()
         Me.CoreEditor = New XC2Editor.XC2FieldTypeEditor()
         Me.PlayerInfoEditor = New XC2Editor.XC2FieldTypeEditor()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'SaveBtn
@@ -83,6 +85,33 @@ Partial Class XC2MainForm
         Me.ArtsWP.TabIndex = 21
         Me.ArtsWP.Text = "Art Weapon Points"
         Me.ArtsWP.UseVisualStyleBackColor = True
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(435, 93)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(108, 30)
+        Me.Button1.TabIndex = 23
+        Me.Button1.Text = "Cores"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(154, 319)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(99, 13)
+        Me.Label1.TabIndex = 24
+        Me.Label1.Text = "SkillLevel - Max = 5"
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(435, 417)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(108, 31)
+        Me.Button2.TabIndex = 25
+        Me.Button2.Text = "Credits"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'MiniGameEditor
         '
@@ -158,20 +187,13 @@ Partial Class XC2MainForm
         Me.PlayerInfoEditor.Size = New System.Drawing.Size(391, 93)
         Me.PlayerInfoEditor.TabIndex = 16
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(435, 93)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(108, 30)
-        Me.Button1.TabIndex = 23
-        Me.Button1.Text = "Cores"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'XC2MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(565, 460)
+        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.MiniGameEditor)
         Me.Controls.Add(Me.ArtsWP)
@@ -185,8 +207,9 @@ Partial Class XC2MainForm
         Me.Controls.Add(Me.SaveAsFileBtn)
         Me.Controls.Add(Me.OpenFileBtn)
         Me.Name = "XC2MainForm"
-        Me.Text = "XC2MainForm"
+        Me.Text = "XC2 Save Editor"
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -202,4 +225,6 @@ Partial Class XC2MainForm
     Friend WithEvents ArtsWP As Button
     Friend WithEvents MiniGameEditor As XC2FieldTypeEditor
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Button2 As Button
 End Class

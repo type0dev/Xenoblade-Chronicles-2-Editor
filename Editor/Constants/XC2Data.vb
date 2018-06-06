@@ -11,12 +11,58 @@ Public Class XC2Data
     Public Shared CoreOffsets As New Dictionary(Of XC2DataType, HexDataInfo) From {
         {XC2DataType.CommonItemAmount, New HexDataInfo With {.Offset = &HF627A, .Size = &H2, .ToSaveFileValue = FieldConversions.FromCoreDecimal, .ToHumanReadableValue = FieldConversions.ToCoreDecimal}},
         {XC2DataType.RareItemAmount, New HexDataInfo With {.Offset = &HF6286, .Size = &H2, .ToSaveFileValue = FieldConversions.FromCoreDecimal, .ToHumanReadableValue = FieldConversions.ToCoreDecimal}},
-        {XC2DataType.LegendaryItemAmount, New HexDataInfo With {.Offset = &H6292, .Size = &H2, .ToSaveFileValue = FieldConversions.FromCoreDecimal, .ToHumanReadableValue = FieldConversions.ToCoreDecimal}}
+        {XC2DataType.LegendaryItemAmount, New HexDataInfo With {.Offset = &HF6292, .Size = &H2, .ToSaveFileValue = FieldConversions.FromCoreDecimal, .ToHumanReadableValue = FieldConversions.ToCoreDecimal}}
     }
 
     Public Shared BladeInfoOffsets As New Dictionary(Of XC2DataType, HexDataInfo) From {
-        {XC2DataType.Pyra_Trust, New HexDataInfo With {.Offset = &H5A70, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}}
-    }
+        {XC2DataType.Pyra_Trust, New HexDataInfo With {.Offset = &H5A70, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Pyra_Cooldown_Timer, New HexDataInfo With {.Offset = &H6264, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Pyra_Art0_Level, New HexDataInfo With {.Offset = &H5A7F, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Pyra_Art1_Level, New HexDataInfo With {.Offset = &H5A8B, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Pyra_Art2_Level, New HexDataInfo With {.Offset = &H5A97, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},''
+        {XC2DataType.Pyra_Blade_Skills0_Level, New HexDataInfo With {.Offset = &H5ADB, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},'''
+        {XC2DataType.Pyra_Blade_Skills1_Level, New HexDataInfo With {.Offset = &H5AE1, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},''
+        {XC2DataType.Pyra_Blade_Skills2_Level, New HexDataInfo With {.Offset = &H5AE7, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Pyra_Field_Skills0_Level, New HexDataInfo With {.Offset = &H5AED, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Pyra_Field_Skills1_Level, New HexDataInfo With {.Offset = &H5AF3, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Pyra_Field_Skills2_Level, New HexDataInfo With {.Offset = &H5AF9, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Pyra_Weapon_Type, New HexDataInfo With {.Offset = &H625D, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Mythra_Trust, New HexDataInfo With {.Offset = &H6314, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Mythra_Cooldown_Timer, New HexDataInfo With {.Offset = &H6B08, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Mythra_Art0_Level, New HexDataInfo With {.Offset = &H6323, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Mythra_Art1_Level, New HexDataInfo With {.Offset = &H632F, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Mythra_Art2_Level, New HexDataInfo With {.Offset = &H633B, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Mythra_Blade_Skills0_Level, New HexDataInfo With {.Offset = &H637F, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Mythra_Blade_Skills1_Level, New HexDataInfo With {.Offset = &H6385, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Mythra_Blade_Skills2_Level, New HexDataInfo With {.Offset = &H638B, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Mythra_Field_Skills0_Level, New HexDataInfo With {.Offset = &H6391, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Mythra_Field_Skills1_Level, New HexDataInfo With {.Offset = &H6397, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Mythra_Field_Skills2_Level, New HexDataInfo With {.Offset = &H639D, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Mythra_Weapon_Type, New HexDataInfo With {.Offset = &H6B01, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade2_Trust, New HexDataInfo With {.Offset = &H6BB8, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade2_Cooldown_Timer, New HexDataInfo With {.Offset = &H73AC, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade2_Weapon_Type, New HexDataInfo With {.Offset = &H73A5, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade3_Trust, New HexDataInfo With {.Offset = &H745C, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade3_Weapon_Type, New HexDataInfo With {.Offset = &H7C49, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade4_Trust, New HexDataInfo With {.Offset = &H7D00, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade4_Weapon_Type, New HexDataInfo With {.Offset = &H84ED, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade5_Trust, New HexDataInfo With {.Offset = &H85A4, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade5_Weapon_Type, New HexDataInfo With {.Offset = &H8D91, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade6_Trust, New HexDataInfo With {.Offset = &H8E48, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade6_Weapon_Type, New HexDataInfo With {.Offset = &H9635, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade7_Trust, New HexDataInfo With {.Offset = &H96EC, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade7_Weapon_Type, New HexDataInfo With {.Offset = &H9ED9, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade8_Trust, New HexDataInfo With {.Offset = &H9F90, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade8_Weapon_Type, New HexDataInfo With {.Offset = &HA77E, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade9_Trust, New HexDataInfo With {.Offset = &HA834, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade9_Weapon_Type, New HexDataInfo With {.Offset = &HB021, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade10_Trust, New HexDataInfo With {.Offset = &HB0D8, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade10_Weapon_Type, New HexDataInfo With {.Offset = &HB8C5, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade11_Trust, New HexDataInfo With {.Offset = &HB97C, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade11_Weapon_Type, New HexDataInfo With {.Offset = &HC169, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade12_Trust, New HexDataInfo With {.Offset = &HC220, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+        {XC2DataType.Blade12_Weapon_Type, New HexDataInfo With {.Offset = &HCA0D, .Size = &H1, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}}
+     }
 
     Public Shared DriverInfoOffsets As New Dictionary(Of XC2DataType, HexDataInfo) From {
        {XC2DataType.Rex_Bravery, New HexDataInfo With {.Offset = &H40, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
@@ -32,6 +78,7 @@ Public Class XC2Data
        {XC2DataType.Rex_Agility, New HexDataInfo With {.Offset = &HDA, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Rex_Skill_Points, New HexDataInfo With {.Offset = &HF4, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Rex_Total_Skill_Points, New HexDataInfo With {.Offset = &HF8, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Rex_Battle_Exp, New HexDataInfo With {.Offset = &HF0, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Nia_Bravery, New HexDataInfo With {.Offset = &H5E0, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Nia_Truth, New HexDataInfo With {.Offset = &H5E8, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Nia_Comp, New HexDataInfo With {.Offset = &H5F0, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
@@ -45,6 +92,7 @@ Public Class XC2Data
        {XC2DataType.Nia_Exp, New HexDataInfo With {.Offset = &H68C, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Nia_Skill_Points, New HexDataInfo With {.Offset = &H694, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Nia_Total_Skill_Points, New HexDataInfo With {.Offset = &H698, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Nia_Battle_Exp, New HexDataInfo With {.Offset = &H690, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Tora_Bravery, New HexDataInfo With {.Offset = &H1120, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Tora_Truth, New HexDataInfo With {.Offset = &H1128, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Tora_Comp, New HexDataInfo With {.Offset = &H1130, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
@@ -58,6 +106,7 @@ Public Class XC2Data
        {XC2DataType.Tora_Exp, New HexDataInfo With {.Offset = &H11CC, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Tora_Skill_Points, New HexDataInfo With {.Offset = &H11D4, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Tora_Total_Skill_Points, New HexDataInfo With {.Offset = &H11D8, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Tora_Battle_Exp, New HexDataInfo With {.Offset = &H11D0, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Zeke_Bravery, New HexDataInfo With {.Offset = &HB80, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Zeke_Truth, New HexDataInfo With {.Offset = &HB88, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Zeke_Comp, New HexDataInfo With {.Offset = &HB90, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
@@ -71,6 +120,7 @@ Public Class XC2Data
        {XC2DataType.Zeke_Exp, New HexDataInfo With {.Offset = &HC2C, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Zeke_Skill_Points, New HexDataInfo With {.Offset = &HC34, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Zeke_Total_Skill_Points, New HexDataInfo With {.Offset = &HC38, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Zeke_Battle_Exp, New HexDataInfo With {.Offset = &HC30, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Morag_Bravery, New HexDataInfo With {.Offset = &H1C60, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Morag_Truth, New HexDataInfo With {.Offset = &H1C68, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Morag_Comp, New HexDataInfo With {.Offset = &H1C70, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
@@ -84,6 +134,7 @@ Public Class XC2Data
        {XC2DataType.Morag_Exp, New HexDataInfo With {.Offset = &H1D0C, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Morag_Skill_Points, New HexDataInfo With {.Offset = &H1D14, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Morag_Total_Skill_Points, New HexDataInfo With {.Offset = &H1D18, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Morag_Battle_Exp, New HexDataInfo With {.Offset = &H1D10, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Vandham_Bravery, New HexDataInfo With {.Offset = &H1C0, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Vandham_Truth, New HexDataInfo With {.Offset = &H16C8, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Vandham_Comp, New HexDataInfo With {.Offset = &H16D0, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
@@ -96,7 +147,8 @@ Public Class XC2Data
        {XC2DataType.Vandham_Luck, New HexDataInfo With {.Offset = &H175C, .Size = &H2, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Vandham_Exp, New HexDataInfo With {.Offset = &H176C, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
        {XC2DataType.Vandham_Skill_Points, New HexDataInfo With {.Offset = &H1774, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
-       {XC2DataType.Vandham_Total_Skill_Points, New HexDataInfo With {.Offset = &H1778, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}}
+       {XC2DataType.Vandham_Total_Skill_Points, New HexDataInfo With {.Offset = &H1778, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},
+       {XC2DataType.Vandham_Battle_Exp, New HexDataInfo With {.Offset = &H1770, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}}
        }
     Public Shared ArtWeaponPointOffsets As New Dictionary(Of XC2DataType, HexDataInfo) From {
         {XC2DataType.Rex_Art_Weapon_0, New HexDataInfo With {.Offset = &H108, .Size = &H4, .ToSaveFileValue = FieldConversions.FromSimpleDecimal, .ToHumanReadableValue = FieldConversions.ToSimpleDecimal}},

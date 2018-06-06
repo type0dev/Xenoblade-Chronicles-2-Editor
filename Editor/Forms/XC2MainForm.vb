@@ -100,8 +100,6 @@ Public Class XC2MainForm
         ArtWeaponPointEditor.Configure(XC2Data.ArtWeaponPointOffsets, "Driver Art WP", ReadFromFileBytes, SetFileBytes)
         ArtWeaponPointEditor.DataBindings.Add(New Binding(NameOf(ArtWeaponPointEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
 
-        MiniGameEditor.Configure(XC2Data.MiniGameOffset, "Mini Game", ReadFromFileBytes, SetFileBytes)
-        MiniGameEditor.DataBindings.Add(New Binding(NameOf(MiniGameEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
 
     End Sub
 
@@ -172,5 +170,13 @@ Public Class XC2MainForm
 
         End If
 
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Credits.Visible = True
     End Sub
 End Class

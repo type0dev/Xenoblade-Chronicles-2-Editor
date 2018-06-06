@@ -10,6 +10,55 @@ Public Enum XC2DataType
     LegendaryItemID
     LegendaryItemAmount
     Magic
+    Pyra_Trust
+    Pyra_Cooldown_Timer
+    Pyra_Art0_Level
+    Pyra_Art1_Level
+    Pyra_Art2_Level
+    Pyra_Blade_Skills0_Level
+    Pyra_Blade_Skills1_Level
+    Pyra_Blade_Skills2_Level
+    Pyra_Field_Skills0_Level
+    Pyra_Field_Skills1_Level
+    Pyra_Field_Skills2_Level
+    Pyra_Weapon_Type
+    Mythra_Trust
+    Mythra_Cooldown_Timer
+    Mythra_Art0_Level
+    Mythra_Art1_Level
+    Mythra_Art2_Level
+    Mythra_Blade_Skills0_Level
+    Mythra_Blade_Skills1_Level
+    Mythra_Blade_Skills2_Level
+    Mythra_Field_Skills0_Level
+    Mythra_Field_Skills1_Level
+    Mythra_Field_Skills2_Level
+    Mythra_Weapon_Type
+    Blade2_Trust
+    Blade2_Cooldown_Timer
+    Blade2_Weapon_Type
+    Blade3_Trust
+    Blade3_Weapon_Type
+    Blade4_Trust
+    Blade4_Weapon_Type
+    Blade5_Trust
+    Blade5_Weapon_Type
+    Blade6_Trust
+    Blade6_Weapon_Type
+    Blade7_Trust
+    Blade7_Weapon_Type
+    Blade8_Trust
+    Blade8_Weapon_Type
+    Blade9_Trust
+    Blade9_Weapon_Type
+    Blade10_Trust
+    Blade10_Weapon_Type
+    Blade11_Trust
+    Blade11_Weapon_Type
+    Blade12_Trust
+    Blade12_Weapon_Type
+    Blade13_Trust
+    Blade13_Weapon_Type
     Rex_BattleExp
     Rex_Bravery
     Rex_Truth
@@ -24,9 +73,11 @@ Public Enum XC2DataType
     Rex_Exp
     Rex_Skill_Points
     Rex_Total_Skill_Points
+    Rex_Battle_Exp
     Nia_Bravery
     Nia_Truth
     Nia_Comp
+    Nia_Justice
     Nia_HPMax
     Nia_Stregth
     Nia_Ether
@@ -36,7 +87,7 @@ Public Enum XC2DataType
     Nia_Exp
     Nia_Skill_Points
     Nia_Total_Skill_Points
-    Nia_Justice
+    Nia_Battle_Exp
     Tora_Bravery
     Tora_Truth
     Tora_Comp
@@ -50,6 +101,7 @@ Public Enum XC2DataType
     Tora_Exp
     Tora_Skill_Points
     Tora_Total_Skill_Points
+    Tora_Battle_Exp
     Zeke_Bravery
     Zeke_Truth
     Zeke_Comp
@@ -63,6 +115,7 @@ Public Enum XC2DataType
     Zeke_Exp
     Zeke_Skill_Points
     Zeke_Total_Skill_Points
+    Zeke_Battle_Exp
     Morag_Bravery
     Morag_Truth
     Morag_Comp
@@ -76,6 +129,7 @@ Public Enum XC2DataType
     Morag_Exp
     Morag_Skill_Points
     Morag_Total_Skill_Points
+    Morag_Battle_Exp
     Vandham_Bravery
     Vandham_Truth
     Vandham_Comp
@@ -89,7 +143,7 @@ Public Enum XC2DataType
     Vandham_Exp
     Vandham_Skill_Points
     Vandham_Total_Skill_Points
-    Pyra_Trust
+    Vandham_Battle_Exp
     Rex_Art_Weapon_0
     Rex_Art_Weapon_0_Total
     Rex_Art_Weapon_1

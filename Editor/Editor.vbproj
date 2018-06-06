@@ -97,6 +97,12 @@
     <Compile Include="Controls\XC2FieldTypeEditor.vb">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Include="Forms\Credits.Designer.vb">
+      <DependentUpon>Credits.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Credits.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\XC2MainForm.Designer.vb">
       <DependentUpon>XC2MainForm.vb</DependentUpon>
     </Compile>
@@ -125,6 +131,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Controls\XC2FieldTypeEditor.resx">
       <DependentUpon>XC2FieldTypeEditor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Credits.resx">
+      <DependentUpon>Credits.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\XC2MainForm.resx">
       <DependentUpon>XC2MainForm.vb</DependentUpon>
