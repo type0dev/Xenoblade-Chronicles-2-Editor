@@ -22,14 +22,18 @@ Partial Class XC2MainForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(XC2MainForm))
         Me.SaveBtn = New System.Windows.Forms.Button()
         Me.SaveAsFileBtn = New System.Windows.Forms.Button()
         Me.OpenFileBtn = New System.Windows.Forms.Button()
-        Me.MiniGame = New System.Windows.Forms.Button()
-        Me.ArtsWP = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.MiniGameButton = New System.Windows.Forms.Button()
+        Me.ArtsWPButton = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.CreditsButton = New System.Windows.Forms.Button()
+        Me.DriversButton = New System.Windows.Forms.Button()
+        Me.BladeButton = New System.Windows.Forms.Button()
+        Me.WeaponCPButton = New System.Windows.Forms.Button()
+        Me.WeaponCPEditor = New XC2Editor.XC2FieldTypeEditor()
         Me.MiniGameEditor = New XC2Editor.XC2FieldTypeEditor()
         Me.DriverEditor = New XC2Editor.XC2FieldTypeEditor()
         Me.ArtWeaponPointEditor = New XC2Editor.XC2FieldTypeEditor()
@@ -41,7 +45,7 @@ Partial Class XC2MainForm
         'SaveBtn
         '
         Me.SaveBtn.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SaveBtn.Location = New System.Drawing.Point(95, 417)
+        Me.SaveBtn.Location = New System.Drawing.Point(95, 206)
         Me.SaveBtn.Name = "SaveBtn"
         Me.SaveBtn.Size = New System.Drawing.Size(76, 30)
         Me.SaveBtn.TabIndex = 15
@@ -51,7 +55,7 @@ Partial Class XC2MainForm
         'SaveAsFileBtn
         '
         Me.SaveAsFileBtn.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.SaveAsFileBtn.Location = New System.Drawing.Point(177, 417)
+        Me.SaveAsFileBtn.Location = New System.Drawing.Point(177, 206)
         Me.SaveAsFileBtn.Name = "SaveAsFileBtn"
         Me.SaveAsFileBtn.Size = New System.Drawing.Size(76, 30)
         Me.SaveAsFileBtn.TabIndex = 14
@@ -61,57 +65,89 @@ Partial Class XC2MainForm
         'OpenFileBtn
         '
         Me.OpenFileBtn.Font = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.OpenFileBtn.Location = New System.Drawing.Point(12, 417)
+        Me.OpenFileBtn.Location = New System.Drawing.Point(12, 206)
         Me.OpenFileBtn.Name = "OpenFileBtn"
         Me.OpenFileBtn.Size = New System.Drawing.Size(77, 30)
         Me.OpenFileBtn.TabIndex = 13
         Me.OpenFileBtn.Text = "Open"
         Me.OpenFileBtn.UseVisualStyleBackColor = True
         '
-        'MiniGame
+        'MiniGameButton
         '
-        Me.MiniGame.Location = New System.Drawing.Point(435, 57)
-        Me.MiniGame.Name = "MiniGame"
-        Me.MiniGame.Size = New System.Drawing.Size(108, 30)
-        Me.MiniGame.TabIndex = 20
-        Me.MiniGame.Text = "MiniGame"
-        Me.MiniGame.UseVisualStyleBackColor = True
+        Me.MiniGameButton.BackColor = System.Drawing.SystemColors.ControlLight
+        Me.MiniGameButton.Location = New System.Drawing.Point(435, 119)
+        Me.MiniGameButton.Name = "MiniGameButton"
+        Me.MiniGameButton.Size = New System.Drawing.Size(108, 30)
+        Me.MiniGameButton.TabIndex = 20
+        Me.MiniGameButton.Text = "MiniGame"
+        Me.MiniGameButton.UseVisualStyleBackColor = False
         '
-        'ArtsWP
+        'ArtsWPButton
         '
-        Me.ArtsWP.Location = New System.Drawing.Point(435, 21)
-        Me.ArtsWP.Name = "ArtsWP"
-        Me.ArtsWP.Size = New System.Drawing.Size(108, 30)
-        Me.ArtsWP.TabIndex = 21
-        Me.ArtsWP.Text = "Art Weapon Points"
-        Me.ArtsWP.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(435, 93)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(108, 30)
-        Me.Button1.TabIndex = 23
-        Me.Button1.Text = "Cores"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.ArtsWPButton.Location = New System.Drawing.Point(435, 83)
+        Me.ArtsWPButton.Name = "ArtsWPButton"
+        Me.ArtsWPButton.Size = New System.Drawing.Size(108, 30)
+        Me.ArtsWPButton.TabIndex = 21
+        Me.ArtsWPButton.Text = "Art Weapon Points"
+        Me.ArtsWPButton.UseVisualStyleBackColor = True
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(154, 319)
+        Me.Label1.Location = New System.Drawing.Point(160, 169)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(99, 13)
         Me.Label1.TabIndex = 24
         Me.Label1.Text = "SkillLevel - Max = 5"
         '
-        'Button2
+        'CreditsButton
         '
-        Me.Button2.Location = New System.Drawing.Point(435, 417)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(108, 31)
-        Me.Button2.TabIndex = 25
-        Me.Button2.Text = "Credits"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.CreditsButton.Location = New System.Drawing.Point(435, 206)
+        Me.CreditsButton.Name = "CreditsButton"
+        Me.CreditsButton.Size = New System.Drawing.Size(108, 31)
+        Me.CreditsButton.TabIndex = 25
+        Me.CreditsButton.Text = "Credits"
+        Me.CreditsButton.UseVisualStyleBackColor = True
+        '
+        'DriversButton
+        '
+        Me.DriversButton.Location = New System.Drawing.Point(435, 11)
+        Me.DriversButton.Name = "DriversButton"
+        Me.DriversButton.Size = New System.Drawing.Size(108, 30)
+        Me.DriversButton.TabIndex = 26
+        Me.DriversButton.Text = "Drivers"
+        Me.DriversButton.UseVisualStyleBackColor = True
+        '
+        'BladeButton
+        '
+        Me.BladeButton.Location = New System.Drawing.Point(435, 47)
+        Me.BladeButton.Name = "BladeButton"
+        Me.BladeButton.Size = New System.Drawing.Size(108, 30)
+        Me.BladeButton.TabIndex = 26
+        Me.BladeButton.Text = "Blades"
+        Me.BladeButton.UseVisualStyleBackColor = True
+        '
+        'WeaponCPButton
+        '
+        Me.WeaponCPButton.Location = New System.Drawing.Point(435, 156)
+        Me.WeaponCPButton.Name = "WeaponCPButton"
+        Me.WeaponCPButton.Size = New System.Drawing.Size(108, 34)
+        Me.WeaponCPButton.TabIndex = 28
+        Me.WeaponCPButton.Text = "Weapon Chips"
+        Me.WeaponCPButton.UseVisualStyleBackColor = True
+        '
+        'WeaponCPEditor
+        '
+        Me.WeaponCPEditor.CanEdit = False
+        Me.WeaponCPEditor.CurrentValue = Nothing
+        Me.WeaponCPEditor.DataSource = Nothing
+        Me.WeaponCPEditor.FieldTypeLabel = Nothing
+        Me.WeaponCPEditor.FieldValueLabel = "Value"
+        Me.WeaponCPEditor.Location = New System.Drawing.Point(12, 111)
+        Me.WeaponCPEditor.Name = "WeaponCPEditor"
+        Me.WeaponCPEditor.Size = New System.Drawing.Size(391, 93)
+        Me.WeaponCPEditor.TabIndex = 27
+        Me.WeaponCPEditor.Visible = False
         '
         'MiniGameEditor
         '
@@ -133,10 +169,11 @@ Partial Class XC2MainForm
         Me.DriverEditor.DataSource = Nothing
         Me.DriverEditor.FieldTypeLabel = Nothing
         Me.DriverEditor.FieldValueLabel = "Value"
-        Me.DriverEditor.Location = New System.Drawing.Point(12, 210)
+        Me.DriverEditor.Location = New System.Drawing.Point(12, 111)
         Me.DriverEditor.Name = "DriverEditor"
         Me.DriverEditor.Size = New System.Drawing.Size(391, 93)
         Me.DriverEditor.TabIndex = 19
+        Me.DriverEditor.Visible = False
         '
         'ArtWeaponPointEditor
         '
@@ -158,10 +195,11 @@ Partial Class XC2MainForm
         Me.BladeEditor.DataSource = Nothing
         Me.BladeEditor.FieldTypeLabel = Nothing
         Me.BladeEditor.FieldValueLabel = "Value"
-        Me.BladeEditor.Location = New System.Drawing.Point(12, 309)
+        Me.BladeEditor.Location = New System.Drawing.Point(12, 111)
         Me.BladeEditor.Name = "BladeEditor"
         Me.BladeEditor.Size = New System.Drawing.Size(391, 93)
         Me.BladeEditor.TabIndex = 18
+        Me.BladeEditor.Visible = False
         '
         'CoreEditor
         '
@@ -191,13 +229,16 @@ Partial Class XC2MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(565, 460)
-        Me.Controls.Add(Me.Button2)
+        Me.ClientSize = New System.Drawing.Size(550, 246)
+        Me.Controls.Add(Me.WeaponCPButton)
+        Me.Controls.Add(Me.WeaponCPEditor)
+        Me.Controls.Add(Me.BladeButton)
+        Me.Controls.Add(Me.DriversButton)
+        Me.Controls.Add(Me.CreditsButton)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.MiniGameEditor)
-        Me.Controls.Add(Me.ArtsWP)
-        Me.Controls.Add(Me.MiniGame)
+        Me.Controls.Add(Me.ArtsWPButton)
+        Me.Controls.Add(Me.MiniGameButton)
         Me.Controls.Add(Me.DriverEditor)
         Me.Controls.Add(Me.ArtWeaponPointEditor)
         Me.Controls.Add(Me.BladeEditor)
@@ -206,6 +247,7 @@ Partial Class XC2MainForm
         Me.Controls.Add(Me.SaveBtn)
         Me.Controls.Add(Me.SaveAsFileBtn)
         Me.Controls.Add(Me.OpenFileBtn)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "XC2MainForm"
         Me.Text = "XC2 Save Editor"
         Me.ResumeLayout(False)
@@ -221,10 +263,13 @@ Partial Class XC2MainForm
     Friend WithEvents OpenFileBtn As Button
     Friend WithEvents DriverEditor As XC2FieldTypeEditor
     Friend WithEvents ArtWeaponPointEditor As XC2FieldTypeEditor
-    Friend WithEvents MiniGame As Button
-    Friend WithEvents ArtsWP As Button
+    Friend WithEvents MiniGameButton As Button
+    Friend WithEvents ArtsWPButton As Button
     Friend WithEvents MiniGameEditor As XC2FieldTypeEditor
-    Friend WithEvents Button1 As Button
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button2 As Button
+    Friend WithEvents CreditsButton As Button
+    Friend WithEvents DriversButton As Button
+    Friend WithEvents BladeButton As Button
+    Friend WithEvents WeaponCPEditor As XC2FieldTypeEditor
+    Friend WithEvents WeaponCPButton As Button
 End Class

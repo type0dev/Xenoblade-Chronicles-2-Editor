@@ -4,11 +4,11 @@
 Public Enum XC2DataType
     Money
     CommonItemID
-    CommonItemAmount
+    Common
     RareItemID
-    RareItemAmount
+    Rare
     LegendaryItemID
-    LegendaryItemAmount
+    Legendary
     Magic
     Pyra_Trust
     Pyra_Cooldown_Timer
@@ -509,6 +509,36 @@ Public Enum XC2DataType
     MiniGame_253
     MiniGame_254
     MiniGame_255
+    Weapon_Chip_0
+    Weapon_Chip_1
+    Weapon_Chip_2
+    Weapon_Chip_3
+    Weapon_Chip_4
+    Weapon_Chip_5
+    Weapon_Chip_6
+    Weapon_Chip_7
+    Weapon_Chip_8
+    Weapon_Chip_9
+    Weapon_Chip_10
+    Weapon_Chip_11
+    Weapon_Chip_12
+    Weapon_Chip_13
+    Weapon_Chip_14
+    Weapon_Chip_15
+    Weapon_Chip_16
+    Weapon_Chip_17
+    Weapon_Chip_18
+    Weapon_Chip_19
+    Weapon_Chip_20
+    Weapon_Chip_21
+    Weapon_Chip_22
+    Weapon_Chip_23
+    Weapon_Chip_24
+    Weapon_Chip_25
+    Weapon_Chip_26
+    Weapon_Chip_27
+    Weapon_Chip_28
+    Weapon_Chip_29
     Tora_Art_Weapon_0
     Tora_Art_Weapon_0_Total
     Tora_Art_Weapon_1

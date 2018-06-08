@@ -100,6 +100,11 @@ Public Class XC2MainForm
         ArtWeaponPointEditor.Configure(XC2Data.ArtWeaponPointOffsets, "Driver Art WP", ReadFromFileBytes, SetFileBytes)
         ArtWeaponPointEditor.DataBindings.Add(New Binding(NameOf(ArtWeaponPointEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
 
+        MiniGameEditor.Configure(XC2Data.MiniGameOffset, "Mini Game", ReadFromFileBytes, SetFileBytes)
+        MiniGameEditor.DataBindings.Add(New Binding(NameOf(MiniGameEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
+
+        WeaponCPEditor.Configure(XC2Data.WeaponChipOffset, "Weapon Chips", ReadFromFileBytes, SetFileBytes)
+        WeaponCPEditor.DataBindings.Add(New Binding(NameOf(WeaponCPEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
 
     End Sub
 
@@ -126,11 +131,17 @@ Public Class XC2MainForm
 
     End Sub
 
-    Private Sub Blades_Click(sender As Object, e As EventArgs) Handles MiniGame.Click
+    Private Sub Blades_Click(sender As Object, e As EventArgs) Handles MiniGameButton.Click
+
+        MiniGameButton.BackColor = Color.LightGray
+
         If ArtWeaponPointEditor.Visible = True Then
             ArtWeaponPointEditor.Visible = False
         End If
 
+        If WeaponCPEditor.Visible = True Then
+            WeaponCPEditor.Visible = False
+        End If
 
         If MiniGameEditor.Visible = True Then
             MiniGameEditor.Visible = False
@@ -138,13 +149,33 @@ Public Class XC2MainForm
             MiniGameEditor.Visible = True
 
         End If
+        If MiniGameEditor.Visible = True Then MiniGameButton.BackColor = Color.LightBlue Else MiniGameButton.BackColor = Color.LightGray
+
+        WeaponCPButton.BackColor = Color.LightGray
+        BladeButton.BackColor = Color.LightGray
+        DriversButton.BackColor = Color.LightGray
+        ArtsWPButton.BackColor = Color.LightGray
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ArtsWP.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ArtsWPButton.Click
+
+        ArtsWPButton.BackColor = Color.LightGray
+
+        If DriverEditor.Visible = True Then
+            DriverEditor.Visible = False
+        End If
+
+        If BladeEditor.Visible = True Then
+            BladeEditor.Visible = False
+        End If
 
         If MiniGameEditor.Visible = True Then
             MiniGameEditor.Visible = False
+        End If
+
+        If WeaponCPEditor.Visible = True Then
+            WeaponCPEditor.Visible = False
         End If
 
         If ArtWeaponPointEditor.Visible = True Then
@@ -154,21 +185,17 @@ Public Class XC2MainForm
 
         End If
 
+        If ArtWeaponPointEditor.Visible = True Then ArtsWPButton.BackColor = Color.LightBlue Else ArtsWPButton.BackColor = Color.LightGray
+
+        WeaponCPButton.BackColor = Color.LightGray
+        MiniGameButton.BackColor = Color.LightGray
+        BladeButton.BackColor = Color.LightGray
+        DriversButton.BackColor = Color.LightGray
+
     End Sub
 
-    Private Sub Button1_Click_1(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click_1(sender As Object, e As EventArgs)
 
-        If ArtWeaponPointEditor.Visible = True Or MiniGameEditor.Visible = True Then
-            ArtWeaponPointEditor.Visible = False And MiniGameEditor.Visible = False
-        End If
-
-
-        If CoreEditor.Visible = True Then
-            CoreEditor.Visible = False
-        Else
-            CoreEditor.Visible = True
-
-        End If
 
     End Sub
 
@@ -176,7 +203,117 @@ Public Class XC2MainForm
 
     End Sub
 
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles CreditsButton.Click
         Credits.Visible = True
     End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles DriversButton.Click
+
+        DriversButton.BackColor = Color.LightGray
+
+        If BladeEditor.Visible = True Then
+            BladeEditor.Visible = False
+        End If
+
+        If MiniGameEditor.Visible = True Then
+            MiniGameEditor.Visible = False
+        End If
+
+        If ArtWeaponPointEditor.Visible = True Then
+            ArtWeaponPointEditor.Visible = False
+        End If
+
+        If WeaponCPEditor.Visible = True Then
+            WeaponCPEditor.Visible = False
+        End If
+
+        If DriverEditor.Visible = True Then
+            DriverEditor.Visible = False
+        Else
+            DriverEditor.Visible = True
+
+        End If
+
+        If DriverEditor.Visible = True Then DriversButton.BackColor = Color.LightBlue Else DriversButton.BackColor = Color.LightGray
+
+        WeaponCPButton.BackColor = Color.LightGray
+        MiniGameButton.BackColor = Color.LightGray
+        BladeButton.BackColor = Color.LightGray
+        ArtsWPButton.BackColor = Color.LightGray
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles BladeButton.Click
+
+        BladeButton.BackColor = Color.LightGray
+
+        If DriverEditor.Visible = True Then
+            DriverEditor.Visible = False
+        End If
+
+        If MiniGameEditor.Visible = True Then
+            MiniGameEditor.Visible = False
+        End If
+
+        If ArtWeaponPointEditor.Visible = True Then
+            ArtWeaponPointEditor.Visible = False
+        End If
+
+        If WeaponCPEditor.Visible = True Then
+            WeaponCPEditor.Visible = False
+        End If
+
+        If BladeEditor.Visible = True Then
+            BladeEditor.Visible = False
+        Else
+            BladeEditor.Visible = True
+
+        End If
+
+        If BladeEditor.Visible = True Then BladeButton.BackColor = Color.LightBlue Else BladeButton.BackColor = Color.LightGray
+
+        WeaponCPButton.BackColor = Color.LightGray
+        MiniGameButton.BackColor = Color.LightGray
+        ArtsWPButton.BackColor = Color.LightGray
+        DriversButton.BackColor = Color.LightGray
+
+    End Sub
+
+    Private Sub WeaponCPButton_Click(sender As Object, e As EventArgs) Handles WeaponCPButton.Click
+
+        WeaponCPButton.BackColor = Color.LightGray
+
+        If DriverEditor.Visible = True Then
+            DriverEditor.Visible = False
+        End If
+
+        If BladeEditor.Visible = True Then
+            BladeEditor.Visible = False
+        End If
+
+        If MiniGameEditor.Visible = True Then
+            MiniGameEditor.Visible = False
+        End If
+
+        If ArtWeaponPointEditor.Visible = True Then
+            ArtWeaponPointEditor.Visible = False
+        End If
+
+        If WeaponCPEditor.Visible = True Then
+            WeaponCPEditor.Visible = False
+        Else
+            WeaponCPEditor.Visible = True
+
+        End If
+
+        If WeaponCPEditor.Visible = True Then WeaponCPButton.BackColor = Color.LightBlue Else WeaponCPButton.BackColor = Color.LightGray
+
+        MiniGameButton.BackColor = Color.LightGray
+        BladeButton.BackColor = Color.LightGray
+        ArtsWPButton.BackColor = Color.LightGray
+        DriversButton.BackColor = Color.LightGray
+
+    End Sub
 End Class
+
+
