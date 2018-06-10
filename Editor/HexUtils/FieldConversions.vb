@@ -29,4 +29,11 @@ Public Class FieldConversions
     Public Shared FromCoreDecimal As Func(Of Integer, Integer) = Function(decimalValue As Integer)
                                                                      Return (decimalValue * 8) + 1
                                                                  End Function
+
+    Public Shared FromItemDecimal As Func(Of Integer, Integer) = Function(decimalValue As Integer)
+                                                                     Return (decimalValue * 8)
+                                                                 End Function
+
+
+
 End Class

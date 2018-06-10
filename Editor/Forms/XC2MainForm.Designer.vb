@@ -40,6 +40,8 @@ Partial Class XC2MainForm
         Me.BladeEditor = New XC2Editor.XC2FieldTypeEditor()
         Me.CoreEditor = New XC2Editor.XC2FieldTypeEditor()
         Me.PlayerInfoEditor = New XC2Editor.XC2FieldTypeEditor()
+        Me.TreasureButton = New System.Windows.Forms.Button()
+        Me.TreasureEditor = New XC2Editor.XC2FieldTypeEditor()
         Me.SuspendLayout()
         '
         'SaveBtn
@@ -225,11 +227,35 @@ Partial Class XC2MainForm
         Me.PlayerInfoEditor.Size = New System.Drawing.Size(391, 93)
         Me.PlayerInfoEditor.TabIndex = 16
         '
+        'TreasureButton
+        '
+        Me.TreasureButton.Location = New System.Drawing.Point(550, 11)
+        Me.TreasureButton.Name = "TreasureButton"
+        Me.TreasureButton.Size = New System.Drawing.Size(106, 30)
+        Me.TreasureButton.TabIndex = 29
+        Me.TreasureButton.Text = "Treasure"
+        Me.TreasureButton.UseVisualStyleBackColor = True
+        '
+        'TreasureEditor
+        '
+        Me.TreasureEditor.CanEdit = False
+        Me.TreasureEditor.CurrentValue = Nothing
+        Me.TreasureEditor.DataSource = Nothing
+        Me.TreasureEditor.FieldTypeLabel = Nothing
+        Me.TreasureEditor.FieldValueLabel = "Value"
+        Me.TreasureEditor.Location = New System.Drawing.Point(12, 111)
+        Me.TreasureEditor.Name = "TreasureEditor"
+        Me.TreasureEditor.Size = New System.Drawing.Size(391, 93)
+        Me.TreasureEditor.TabIndex = 30
+        Me.TreasureEditor.Visible = False
+        '
         'XC2MainForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(550, 246)
+        Me.ClientSize = New System.Drawing.Size(668, 246)
+        Me.Controls.Add(Me.TreasureEditor)
+        Me.Controls.Add(Me.TreasureButton)
         Me.Controls.Add(Me.WeaponCPButton)
         Me.Controls.Add(Me.WeaponCPEditor)
         Me.Controls.Add(Me.BladeButton)
@@ -272,4 +298,6 @@ Partial Class XC2MainForm
     Friend WithEvents BladeButton As Button
     Friend WithEvents WeaponCPEditor As XC2FieldTypeEditor
     Friend WithEvents WeaponCPButton As Button
+    Friend WithEvents TreasureButton As Button
+    Friend WithEvents TreasureEditor As XC2FieldTypeEditor
 End Class

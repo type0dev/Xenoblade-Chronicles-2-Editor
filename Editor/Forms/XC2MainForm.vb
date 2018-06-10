@@ -106,6 +106,9 @@ Public Class XC2MainForm
         WeaponCPEditor.Configure(XC2Data.WeaponChipOffset, "Weapon Chips", ReadFromFileBytes, SetFileBytes)
         WeaponCPEditor.DataBindings.Add(New Binding(NameOf(WeaponCPEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
 
+        TreasureEditor.Configure(XC2Data.TreasureBoxOffset, "Treasure Box", ReadFromFileBytes, SetFileBytes)
+        TreasureEditor.DataBindings.Add(New Binding(NameOf(TreasureEditor.CanEdit), Me, NameOf(CanEdit), False, DataSourceUpdateMode.OnPropertyChanged))
+
     End Sub
 
     ''' <summary>
@@ -135,6 +138,11 @@ Public Class XC2MainForm
 
         MiniGameButton.BackColor = Color.LightGray
 
+        '''visable off for other editors'''
+        If TreasureEditor.Visible = True Then
+            TreasureEditor.Visible = False
+        End If
+
         If ArtWeaponPointEditor.Visible = True Then
             ArtWeaponPointEditor.Visible = False
         End If
@@ -151,16 +159,23 @@ Public Class XC2MainForm
         End If
         If MiniGameEditor.Visible = True Then MiniGameButton.BackColor = Color.LightBlue Else MiniGameButton.BackColor = Color.LightGray
 
+        '''turns color light blue off on other buttons'''
         WeaponCPButton.BackColor = Color.LightGray
         BladeButton.BackColor = Color.LightGray
         DriversButton.BackColor = Color.LightGray
         ArtsWPButton.BackColor = Color.LightGray
+        TreasureButton.BackColor = Color.LightGray
 
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles ArtsWPButton.Click
 
         ArtsWPButton.BackColor = Color.LightGray
+
+        '''visable off for other editors'''
+        If TreasureEditor.Visible = True Then
+            TreasureEditor.Visible = False
+        End If
 
         If DriverEditor.Visible = True Then
             DriverEditor.Visible = False
@@ -187,10 +202,12 @@ Public Class XC2MainForm
 
         If ArtWeaponPointEditor.Visible = True Then ArtsWPButton.BackColor = Color.LightBlue Else ArtsWPButton.BackColor = Color.LightGray
 
+        '''turns color light blue off on other buttons'''
         WeaponCPButton.BackColor = Color.LightGray
         MiniGameButton.BackColor = Color.LightGray
         BladeButton.BackColor = Color.LightGray
         DriversButton.BackColor = Color.LightGray
+        TreasureButton.BackColor = Color.LightGray
 
     End Sub
 
@@ -210,6 +227,11 @@ Public Class XC2MainForm
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles DriversButton.Click
 
         DriversButton.BackColor = Color.LightGray
+
+        '''visable off for other editors'''
+        If TreasureEditor.Visible = True Then
+            TreasureEditor.Visible = False
+        End If
 
         If BladeEditor.Visible = True Then
             BladeEditor.Visible = False
@@ -236,16 +258,23 @@ Public Class XC2MainForm
 
         If DriverEditor.Visible = True Then DriversButton.BackColor = Color.LightBlue Else DriversButton.BackColor = Color.LightGray
 
+        '''turns color light blue off on other buttons'''
         WeaponCPButton.BackColor = Color.LightGray
         MiniGameButton.BackColor = Color.LightGray
         BladeButton.BackColor = Color.LightGray
         ArtsWPButton.BackColor = Color.LightGray
+        TreasureButton.BackColor = Color.LightGray
 
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles BladeButton.Click
 
         BladeButton.BackColor = Color.LightGray
+
+        '''visable off for other editors'''
+        If TreasureEditor.Visible = True Then
+            TreasureEditor.Visible = False
+        End If
 
         If DriverEditor.Visible = True Then
             DriverEditor.Visible = False
@@ -272,16 +301,23 @@ Public Class XC2MainForm
 
         If BladeEditor.Visible = True Then BladeButton.BackColor = Color.LightBlue Else BladeButton.BackColor = Color.LightGray
 
+        '''turns color light blue off on other buttons'''
         WeaponCPButton.BackColor = Color.LightGray
         MiniGameButton.BackColor = Color.LightGray
         ArtsWPButton.BackColor = Color.LightGray
         DriversButton.BackColor = Color.LightGray
+        TreasureButton.BackColor = Color.LightGray
 
     End Sub
 
     Private Sub WeaponCPButton_Click(sender As Object, e As EventArgs) Handles WeaponCPButton.Click
 
         WeaponCPButton.BackColor = Color.LightGray
+
+        '''visable off for other editors'''
+        If TreasureEditor.Visible = True Then
+            TreasureEditor.Visible = False
+        End If
 
         If DriverEditor.Visible = True Then
             DriverEditor.Visible = False
@@ -299,20 +335,59 @@ Public Class XC2MainForm
             ArtWeaponPointEditor.Visible = False
         End If
 
+        '''Sets weapon editor visable on and off'''
         If WeaponCPEditor.Visible = True Then
             WeaponCPEditor.Visible = False
         Else
             WeaponCPEditor.Visible = True
-
         End If
 
         If WeaponCPEditor.Visible = True Then WeaponCPButton.BackColor = Color.LightBlue Else WeaponCPButton.BackColor = Color.LightGray
 
+        '''turns color light blue off on other buttons'''
         MiniGameButton.BackColor = Color.LightGray
         BladeButton.BackColor = Color.LightGray
         ArtsWPButton.BackColor = Color.LightGray
         DriversButton.BackColor = Color.LightGray
+        TreasureButton.BackColor = Color.LightGray
 
+    End Sub
+
+    Private Sub TreasureButton_Click(sender As Object, e As EventArgs) Handles TreasureButton.Click
+
+        TreasureButton.BackColor = Color.LightGray
+
+        If DriverEditor.Visible = True Then
+            DriverEditor.Visible = False
+        End If
+
+        If BladeEditor.Visible = True Then
+            BladeEditor.Visible = False
+        End If
+
+        If MiniGameEditor.Visible = True Then
+            MiniGameEditor.Visible = False
+        End If
+
+        If ArtWeaponPointEditor.Visible = True Then
+            ArtWeaponPointEditor.Visible = False
+        End If
+
+        '''Sets weapon editor visable on and off'''
+        If TreasureEditor.Visible = True Then
+            TreasureEditor.Visible = False
+        Else
+            TreasureEditor.Visible = True
+        End If
+
+        If TreasureEditor.Visible = True Then TreasureButton.BackColor = Color.LightBlue Else TreasureButton.BackColor = Color.LightGray
+
+        '''turns color light blue off on other buttons'''
+        WeaponCPButton.BackColor = Color.LightGray
+        MiniGameButton.BackColor = Color.LightGray
+        BladeButton.BackColor = Color.LightGray
+        ArtsWPButton.BackColor = Color.LightGray
+        DriversButton.BackColor = Color.LightGray
     End Sub
 End Class
 

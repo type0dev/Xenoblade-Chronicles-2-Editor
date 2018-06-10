@@ -539,6 +539,33 @@ Public Enum XC2DataType
     Weapon_Chip_27
     Weapon_Chip_28
     Weapon_Chip_29
+    TreasureBox_0
+    TreasureBox_1
+    TreasureBox_2
+    TreasureBox_3
+    TreasureBox_4
+    TreasureBox_5
+    TreasureBox_6
+    TreasureBox_7
+    TreasureBox_8
+    TreasureBox_9
+    TreasureBox_10
+    TreasureBox_11
+    TreasureBox_12
+    TreasureBox_13
+    TreasureBox_14
+    TreasureBox_15
+    TreasureBox_16
+    TreasureBox_17
+    TreasureBox_18
+    TreasureBox_19
+    TreasureBox_20
+    TreasureBox_21
+    TreasureBox_22
+    TreasureBox_23
+    TreasureBox_24
+    TreasureBox_25
+    TreasureBox_26
     Tora_Art_Weapon_0
     Tora_Art_Weapon_0_Total
     Tora_Art_Weapon_1
